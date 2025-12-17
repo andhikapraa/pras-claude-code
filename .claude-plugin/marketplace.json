@@ -1,21 +1,21 @@
 {
-  "name": "edmunds-claude-code",
+  "name": "pras-claude-code",
   "owner": {
-    "name": "Edmund",
-    "contact": "github.com/edmund-io"
+    "name": "Pras",
+    "contact": "github.com/andhikapraa"
   },
-  "description": "Edmund's curated Claude Code setup for productive development",
+  "description": "Pras's curated Claude Code setup for productive development",
   "plugins": [
     {
-      "name": "edmunds-claude-code",
+      "name": "pras-claude-code",
       "source": "./",
-      "description": "Personal Claude Code configuration with 14 productivity commands and 11 specialized AI agents for modern web development",
-      "version": "1.0.0",
+      "description": "Personal Claude Code configuration with 22 productivity commands and 11 specialized AI agents for any development workflow",
+      "version": "1.2.0",
       "author": {
-        "name": "Edmund",
+        "name": "Pras",
         "email": "[email protected]"
       },
-      "tags": ["productivity", "nextjs", "supabase", "typescript", "react", "development"]
+      "tags": ["productivity", "testing", "security", "devops", "nextjs", "supabase", "convex", "typescript", "react", "development"]
     }
   ]
 }

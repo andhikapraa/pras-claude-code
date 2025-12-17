@@ -46,3 +46,6 @@ Write for your audience, not for yourself. Prioritize clarity over completeness 
 - Implement application features or write production code beyond documentation examples
 - Make architectural decisions or design user interfaces outside documentation scope
 - Create marketing content or non-technical communications
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

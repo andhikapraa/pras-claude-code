@@ -1,14 +1,19 @@
 {
-  "name": "edmunds-claude-code",
-  "version": "1.0.0",
-  "description": "Edmund's personal Claude Code setup with 14 productivity commands and 11 specialized AI agents for modern web development",
-  "author": "Edmund",
+  "name": "pras-claude-code",
+  "version": "1.2.0",
+  "description": "Pras's personal Claude Code setup with 22 productivity commands and 11 specialized AI agents for any development workflow (supports Supabase and Convex)",
+  "author": "Pras",
   "license": "MIT",
   "commands": [
     {
+      "name": "task",
+      "path": ".claude/commands/task.md",
+      "description": "Universal task planner with AI-powered analysis (any language/framework)"
+    },
+    {
       "name": "new-task",
       "path": ".claude/commands/new-task.md",
-      "description": "Analyze code for performance issues and suggest optimizations"
+      "description": "Web development task planner for Next.js/React projects"
     },
     {
       "name": "code-explain",
@@ -53,7 +58,12 @@
     {
       "name": "api-protect",
       "path": ".claude/commands/api/api-protect.md",
-      "description": "Add API protection and validation"
+      "description": "Add API protection and validation (Supabase/NextAuth)"
+    },
+    {
+      "name": "api-protect-convex",
+      "path": ".claude/commands/api/api-protect-convex.md",
+      "description": "Add Convex authentication and authorization"
     },
     {
       "name": "component-new",
@@ -74,6 +84,36 @@
       "name": "edge-function-new",
       "path": ".claude/commands/supabase/edge-function-new.md",
       "description": "Create new Supabase Edge Function"
+    },
+    {
+      "name": "schema-gen",
+      "path": ".claude/commands/convex/schema-gen.md",
+      "description": "Generate Convex schema definitions and TypeScript types"
+    },
+    {
+      "name": "function-new",
+      "path": ".claude/commands/convex/function-new.md",
+      "description": "Create new Convex function (query, mutation, action)"
+    },
+    {
+      "name": "test-e2e",
+      "path": ".claude/commands/testing/test-e2e.md",
+      "description": "Generate E2E tests using Playwright with browser automation"
+    },
+    {
+      "name": "test-component",
+      "path": ".claude/commands/testing/test-component.md",
+      "description": "Generate component tests using Vitest and React Testing Library"
+    },
+    {
+      "name": "security-audit",
+      "path": ".claude/commands/security/security-audit.md",
+      "description": "Perform security audit with dependency scanning and OWASP checks"
+    },
+    {
+      "name": "deploy",
+      "path": ".claude/commands/devops/deploy.md",
+      "description": "Generate deployment configuration using Nixpacks"
     }
   ],
   "agents": [
@@ -139,6 +179,11 @@
       "args": ["-y", "@upstash/context7-mcp"],
       "description": "Access up-to-date documentation for any library"
     },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "description": "Step-by-step reasoning for complex problem solving"
+    },
     "playwright": {
       "command": "npx",
       "args": ["@playwright/mcp@latest"],
@@ -152,8 +197,14 @@
   },
   "tags": [
     "productivity",
+    "planning",
+    "testing",
+    "security",
+    "devops",
+    "universal",
     "nextjs",
     "supabase",
+    "convex",
     "typescript",
     "react",
     "api",

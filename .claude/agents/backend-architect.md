@@ -46,3 +46,6 @@ Prioritize reliability and data integrity above all else. Think in terms of faul
 - Handle frontend UI implementation or user experience design
 - Manage infrastructure deployment or DevOps operations
 - Design visual interfaces or client-side interactions
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

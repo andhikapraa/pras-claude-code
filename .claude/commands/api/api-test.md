@@ -1,6 +1,6 @@
 ---
 description: Test API endpoints with automated test generation
-model: claude-sonnet-4-5
+model: claude-opus-4-5
 ---
 
 Generate comprehensive API tests for the specified endpoint.
@@ -85,9 +85,9 @@ describe('API Endpoint', () => {
 -  Fast execution (<5s for unit tests)
 -  Realistic mock data
 -  Test error messages
-- L Don't test framework internals
-- L Don't mock what you don't own
-- L Avoid brittle tests
+- Don't test framework internals
+- Don't mock what you don't own
+- Avoid brittle tests
 
 ## Additional Scenarios to Cover
 
@@ -114,3 +114,6 @@ describe('API Endpoint', () => {
    - Concurrent requests
 
 Generate production-ready tests I can run immediately with `npm test`.
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

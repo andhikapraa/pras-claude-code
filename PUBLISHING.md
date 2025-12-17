@@ -1,4 +1,4 @@
-# Publishing Guide: Edmund's Claude Code Plugin
+# Publishing Guide: Pras's Claude Code Plugin
 
 Complete step-by-step instructions for publishing your Claude Code plugin to GitHub and making it available for others to install.
 
@@ -6,8 +6,8 @@ Complete step-by-step instructions for publishing your Claude Code plugin to Git
 
 - [ ] GitHub account
 - [ ] Git installed locally
-- [ ] Repository renamed to `edmunds-claude-code` ✅
-- [ ] All configuration files updated ✅
+- [ ] Repository renamed to `pras-claude-code`
+- [ ] All configuration files updated
 
 ## Step 1: Create GitHub Repository
 
@@ -15,10 +15,10 @@ Complete step-by-step instructions for publishing your Claude Code plugin to Git
 
 1. Go to https://github.com/new
 2. Fill in the details:
-   - **Repository name**: `edmunds-claude-code`
-   - **Description**: "Edmund's personal Claude Code setup with 14 productivity commands and 11 specialized AI agents for modern web development"
+   - **Repository name**: `pras-claude-code`
+   - **Description**: "Pras's personal Claude Code setup with 17 productivity commands and 11 specialized AI agents for modern web development"
    - **Visibility**: Public (so others can install it)
-   - **Initialize**: ❌ Don't add README, .gitignore, or license (we already have these)
+   - **Initialize**: Don't add README, .gitignore, or license (we already have these)
 3. Click "Create repository"
 
 ### 1.2 Push Your Local Repository
@@ -26,10 +26,10 @@ Complete step-by-step instructions for publishing your Claude Code plugin to Git
 Once the GitHub repository is created, run these commands:
 
 ```bash
-cd ~/Documents/GitHub/edmunds-claude-code
+cd ~/Documents/GitHub/pras-claude-code
 
 # Add the GitHub remote
-git remote add origin https://github.com/edmund-io/edmunds-claude-code.git
+git remote add origin https://github.com/andhikapraa/pras-claude-code.git
 
 # Push your code
 git push -u origin main
@@ -45,7 +45,7 @@ Test that your plugin can be installed:
 
 ```bash
 # Install from your GitHub repo
-/plugin install edmund-io/edmunds-claude-code
+/plugin install andhikapraa/pras-claude-code
 
 # Verify commands are available
 /code-explain
@@ -56,19 +56,19 @@ Test that your plugin can be installed:
 
 To uninstall and test again:
 ```bash
-/plugin uninstall edmunds-claude-code
+/plugin uninstall pras-claude-code
 ```
 
 ## Step 3: Share Your Plugin
 
-Your README already includes your GitHub username `edmund-io`, so users can copy-paste commands directly!
+Your README already includes your GitHub username `andhikapraa`, so users can copy-paste commands directly!
 
 ### Option A: Share Direct Installation Command
 
 Share this command with others:
 
 ```bash
-/plugin install edmund-io/edmunds-claude-code
+/plugin install andhikapraa/pras-claude-code
 ```
 
 ### Option B: Submit to Community Marketplaces
@@ -86,12 +86,12 @@ Share this command with others:
 
 ```json
 {
-  "name": "edmunds-claude-code",
-  "source": "edmund-io/edmunds-claude-code",
-  "description": "Personal Claude Code configuration with 14 productivity commands and 11 specialized AI agents for modern web development",
-  "version": "1.0.0",
-  "author": "Edmund",
-  "tags": ["productivity", "nextjs", "supabase", "typescript", "react", "development"]
+  "name": "pras-claude-code",
+  "source": "andhikapraa/pras-claude-code",
+  "description": "Personal Claude Code configuration with 17 productivity commands and 11 specialized AI agents for modern web development",
+  "version": "1.1.0",
+  "author": "Pras",
+  "tags": ["productivity", "nextjs", "supabase", "convex", "typescript", "react", "development"]
 }
 ```
 
@@ -105,24 +105,24 @@ Share this command with others:
 Example post:
 
 ```
-🚀 Just published my Claude Code setup as a plugin!
+Just published my Claude Code setup as a plugin!
 
-14 slash commands + 11 specialized AI agents for productive web development
+17 slash commands + 11 specialized AI agents for productive web development
 
 Install with:
-/plugin install edmund-io/edmunds-claude-code
+/plugin install andhikapraa/pras-claude-code
 
 Features:
-✅ API scaffolding (/api-new)
-✅ Code optimization (/code-optimize)
-✅ Feature planning (/feature-plan)
-✅ Tech research agent
-✅ Architecture agents
-✅ Security & performance agents
+- API scaffolding (/api-new)
+- Code optimization (/code-optimize)
+- Feature planning (/feature-plan)
+- Tech research agent
+- Architecture agents
+- Security & performance agents
 
-Perfect for Next.js, React, TypeScript, and Supabase projects!
+Perfect for Next.js, React, TypeScript, Supabase, and Convex projects!
 
-GitHub: https://github.com/edmund-io/edmunds-claude-code
+GitHub: https://github.com/andhikapraa/pras-claude-code
 ```
 
 ## Step 5: Maintain Your Plugin
@@ -132,7 +132,7 @@ GitHub: https://github.com/edmund-io/edmunds-claude-code
 When you make changes to your local setup:
 
 ```bash
-cd ~/Documents/GitHub/edmunds-claude-code
+cd ~/Documents/GitHub/pras-claude-code
 
 # Make your changes to commands/agents
 # Then commit and push
@@ -141,17 +141,17 @@ git add .
 git commit -m "Add new command: /new-command-name"
 
 # Update version in plugin.json
-# Bump version: 1.0.0 -> 1.1.0
+# Bump version: 1.1.0 -> 1.2.0
 
 git add .claude-plugin/plugin.json
-git commit -m "Bump version to 1.1.0"
+git commit -m "Bump version to 1.2.0"
 
 git push
 ```
 
 Users can update to the latest version:
 ```bash
-/plugin update edmunds-claude-code
+/plugin update pras-claude-code
 ```
 
 ### Versioning Guidelines
@@ -187,26 +187,26 @@ Check:
 
 For major versions, create GitHub releases:
 
-1. Go to your repo: https://github.com/edmund-io/edmunds-claude-code
-2. Click "Releases" → "Create a new release"
-3. Tag version: `v1.0.0`
-4. Release title: `v1.0.0 - Initial Release`
+1. Go to your repo: https://github.com/andhikapraa/pras-claude-code
+2. Click "Releases" -> "Create a new release"
+3. Tag version: `v1.1.0`
+4. Release title: `v1.1.0 - Initial Release`
 5. Description: List of features/changes
 6. Click "Publish release"
 
 Users can install specific versions:
 ```bash
-/plugin install edmund-io/edmunds-claude-code@v1.0.0
+/plugin install andhikapraa/pras-claude-code@v1.1.0
 ```
 
 ## Success Metrics
 
 Track your plugin's success:
-- ⭐ GitHub stars
-- 👁️ GitHub watchers
-- 🍴 GitHub forks
-- 💬 Issues and discussions
-- 📊 Clone/download counts (GitHub Insights)
+- GitHub stars
+- GitHub watchers
+- GitHub forks
+- Issues and discussions
+- Clone/download counts (GitHub Insights)
 
 ## Getting Help
 
@@ -217,4 +217,4 @@ If you run into issues:
 
 ---
 
-**Congratulations!** Once published, your plugin will be available for the Claude Code community to use and learn from. Happy sharing! 🎉
+**Congratulations!** Once published, your plugin will be available for the Claude Code community to use and learn from. Happy sharing!

@@ -48,3 +48,6 @@ Approach every system with zero-trust principles and a security-first mindset. T
 - Compromise security for convenience or implement insecure solutions for speed
 - Overlook security vulnerabilities or downplay risk severity without proper analysis
 - Bypass established security protocols or ignore compliance requirements
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

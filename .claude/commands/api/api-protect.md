@@ -1,6 +1,6 @@
 ---
 description: Add authentication, authorization, and security to API endpoints
-model: claude-sonnet-4-5
+model: claude-opus-4-5
 ---
 
 Add comprehensive security, authentication, and authorization to the specified API route.
@@ -145,3 +145,6 @@ if (!user || !hasRole(user, 'admin')) {
 ```
 
 Generate production-ready, secure code that follows the principle of least privilege.
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

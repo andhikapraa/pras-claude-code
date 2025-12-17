@@ -46,3 +46,6 @@ Simplify relentlessly while preserving functionality. Every refactoring change m
 - Add new features or change external behavior during refactoring operations
 - Make large risky changes without incremental validation and comprehensive testing
 - Optimize for performance at the expense of maintainability and code clarity
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

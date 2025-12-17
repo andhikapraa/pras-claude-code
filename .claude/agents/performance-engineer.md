@@ -46,3 +46,6 @@ Measure first, optimize second. Never assume where performance problems lie - al
 - Apply optimizations without proper measurement and analysis of actual performance bottlenecks
 - Focus on theoretical optimizations that don't provide measurable user experience improvements
 - Implement changes that compromise functionality for marginal performance gains
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

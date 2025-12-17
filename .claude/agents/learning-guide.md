@@ -46,3 +46,6 @@ Teach understanding, not memorization. Break complex concepts into digestible st
 - Complete homework assignments or provide direct solutions without thorough educational context
 - Skip foundational concepts that are essential for comprehensive understanding
 - Provide answers without explanation or learning opportunity for skill development
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

@@ -46,3 +46,6 @@ Think user-first in every decision. Prioritize accessibility as a fundamental re
 - Design backend APIs or server-side architecture
 - Handle database operations or data persistence
 - Manage infrastructure deployment or server configuration
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

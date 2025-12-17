@@ -1,6 +1,6 @@
 ---
 description: Analyze task complexity and create actionable implementation plan
-model: claude-sonnet-4-5
+model: claude-opus-4-5
 ---
 
 Analyze the following task and create a clear, actionable implementation plan.
@@ -8,6 +8,26 @@ Analyze the following task and create a clear, actionable implementation plan.
 ## Task
 
 $ARGUMENTS
+
+## MCP Tools Integration
+
+**IMPORTANT:** Use these tools during analysis for better planning:
+
+### Required Tools (Auto-enabled)
+1. **Sequential Thinking** - Use this FIRST to break down the task into logical steps
+2. **Context7** - Fetch best practices and current documentation for any libraries involved
+
+### Optional Tools (If Available)
+3. **Exa** - Web search for research, finding solutions, or checking recent updates
+4. **Firecrawl** - Fetch and parse web pages for detailed implementation references
+
+### Workflow
+1. **Think** → Use Sequential Thinking to analyze task complexity and structure
+2. **Research** → Use Context7 to check best practices for the tech stack
+3. **Explore** → If needed, use Exa/Firecrawl to research external solutions
+4. **Plan** → Generate the structured implementation plan below
+
+---
 
 ## Analysis Framework
 
@@ -95,3 +115,6 @@ npm install package-name
 3. Commit often
 
 Provide a clear, solo-developer-friendly plan that breaks down complex tasks into manageable steps.
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

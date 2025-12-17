@@ -1,6 +1,6 @@
 ---
 description: Refactor and clean up code following best practices
-model: claude-sonnet-4-5
+model: claude-opus-4-5
 ---
 
 Clean up and refactor the following code to improve readability, maintainability, and follow best practices.
@@ -205,3 +205,6 @@ const data = await fetch('/api/user').then(r => r.json())
 5. **Further Improvements** - Optional enhancements
 
 Focus on practical improvements that make code more maintainable without over-engineering. Balance clean code with pragmatism.
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

@@ -1,20 +1,20 @@
-# Edmund's Claude Code Setup
+# Pras's Claude Code Setup
 
-My personal Claude Code configuration for productive web development. This plugin provides **14 slash commands** and **11 specialized AI agents** to supercharge your development workflow.
+My personal Claude Code configuration for productive web development. This plugin provides **17 slash commands** and **11 specialized AI agents** to supercharge your development workflow.
 
 ## Quick Install
 
 ```bash
 # Step 1: Add the marketplace
-/plugin marketplace add edmund-io/edmunds-claude-code
+/plugin marketplace add andhikapraa/pras-claude-code
 
 # Step 2: Install the plugin
-/plugin install edmunds-claude-code
+/plugin install pras-claude-code
 ```
 
 ## What's Inside
 
-### 📋 Development Commands (7)
+### Development Commands (7)
 
 - `/new-task` - Analyze code for performance issues
 - `/code-explain` - Generate detailed explanations
@@ -24,23 +24,29 @@ My personal Claude Code configuration for productive web development. This plugi
 - `/lint` - Linting and fixes
 - `/docs-generate` - Documentation generation
 
-### 🔌 API Commands (3)
+### API Commands (4)
 
 - `/api-new` - Create new API endpoints
 - `/api-test` - Test API endpoints
-- `/api-protect` - Add protection & validation
+- `/api-protect` - Add protection & validation (Supabase/NextAuth)
+- `/api-protect-convex` - Add Convex authentication
 
-### 🎨 UI Commands (2)
+### UI Commands (2)
 
-- `/component-new` - Create React components
+- `/component-new` - Create React components (with shadcn/ui)
 - `/page-new` - Create Next.js pages
 
-### 💾 Supabase Commands (2)
+### Supabase Commands (2)
 
 - `/types-gen` - Generate TypeScript types
 - `/edge-function-new` - Create Edge Functions
 
-### 🤖 Specialized AI Agents (11)
+### Convex Commands (2)
+
+- `/schema-gen` - Generate Convex schema and types
+- `/function-new` - Create Convex functions
+
+### Specialized AI Agents (11)
 
 **Architecture & Planning**
 - **tech-stack-researcher** - Technology choice recommendations with trade-offs
@@ -65,23 +71,23 @@ My personal Claude Code configuration for productive web development. This plugi
 
 ```bash
 # Add marketplace
-/plugin marketplace add edmund-io/edmunds-claude-code
+/plugin marketplace add andhikapraa/pras-claude-code
 
 # Install plugin
-/plugin install edmunds-claude-code
+/plugin install pras-claude-code
 ```
 
 ### From Local Clone (for development)
 
 ```bash
-git clone https://github.com/edmund-io/edmunds-claude-code.git
-cd edmunds-claude-code
+git clone https://github.com/andhikapraa/pras-claude-code.git
+cd pras-claude-code
 
 # Add as local marketplace
-/plugin marketplace add /path/to/edmunds-claude-code
+/plugin marketplace add /path/to/pras-claude-code
 
 # Install plugin
-/plugin install edmunds-claude-code
+/plugin install pras-claude-code
 ```
 
 ## Best For
@@ -89,6 +95,7 @@ cd edmunds-claude-code
 - Next.js developers
 - TypeScript projects
 - Supabase users
+- Convex users
 - React developers
 - Full-stack engineers
 
@@ -128,7 +135,7 @@ This setup emphasizes:
 ## Requirements
 
 - Claude Code 2.0.13+
-- Works with any project (optimized for Next.js + Supabase)
+- Works with any project (optimized for Next.js + Supabase/Convex)
 
 ## Customization
 
@@ -141,14 +148,18 @@ Feel free to:
 - Submit issues or suggestions
 - Share your improvements
 
+## Credits
+
+Based on [Edmund's Claude Code Setup](https://github.com/edmund-io/edmunds-claude-code) by Edmund.
+
 ## License
 
 MIT - Use freely in your projects
 
 ## Author
 
-Created by Edmund
+Created by Pras
 
 ---
 
-**Note**: This is my personal setup that I've refined over time. Commands are optimized for Next.js + Supabase workflows but work great with any modern web stack.
+**Note**: This is my personal setup that I've refined over time. Commands are optimized for Next.js + Supabase/Convex workflows but work great with any modern web stack.

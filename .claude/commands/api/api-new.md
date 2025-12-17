@@ -1,6 +1,6 @@
 ---
 description: Create a new Next.js API route with validation, error handling, and TypeScript
-model: claude-sonnet-4-5
+model: claude-opus-4-5
 ---
 
 Create a new Next.js API route following modern best practices for solo developers.
@@ -64,8 +64,11 @@ Create a complete API route with:
 -  Minimal logic in routes (use services/utils)
 -  Environment variable validation
 -  Request/response logging for debugging
-- L No sensitive data in responses
-- L No database queries without validation
-- L No inline business logic (extract to services)
+- No sensitive data in responses
+- No database queries without validation
+- No inline business logic (extract to services)
 
 Generate production-ready code that I can immediately use in my Next.js project.
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

@@ -1,5 +1,5 @@
 ---
-model: claude-sonnet-4-5
+model: claude-opus-4-5
 ---
 
 # Code Explanation and Analysis
@@ -847,3 +847,6 @@ def generate_learning_path(self, analysis):
 8. **Practice Exercises**: Hands-on challenges to reinforce learning
 
 Focus on making complex code accessible through clear explanations, visual aids, and practical examples that build understanding progressively.
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

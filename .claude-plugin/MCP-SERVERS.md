@@ -1,6 +1,6 @@
 # MCP Servers Included
 
-This plugin includes 3 pre-configured MCP servers that enhance Claude Code's capabilities.
+This plugin includes 4 pre-configured MCP servers that enhance Claude Code's capabilities.
 
 ## Included Servers
 
@@ -15,7 +15,21 @@ This plugin includes 3 pre-configured MCP servers that enhance Claude Code's cap
 - Works with thousands of libraries
 - No manual searching required
 
-### 2. **Playwright** (`@playwright/mcp`)
+### 2. **Sequential Thinking** (`@modelcontextprotocol/server-sequential-thinking`)
+**Purpose**: Step-by-step reasoning for complex problem solving
+
+**Capabilities**:
+- Break down complex tasks into logical steps
+- Structured planning and analysis
+- Better reasoning for multi-step problems
+
+**Use Cases**:
+- Task planning with `/new-task`
+- Complex debugging
+- Architecture decisions
+- Multi-step implementations
+
+### 3. **Playwright** (`@playwright/mcp`)
 **Purpose**: Browser automation and web testing
 
 **Capabilities**:
@@ -31,7 +45,7 @@ This plugin includes 3 pre-configured MCP servers that enhance Claude Code's cap
 - Browser automation
 - Visual testing
 
-### 3. **Supabase** (`@supabase/mcp-server-supabase`)
+### 4. **Supabase** (`@supabase/mcp-server-supabase`)
 **Purpose**: Supabase database operations
 
 **Capabilities**:
@@ -47,12 +61,46 @@ This plugin includes 3 pre-configured MCP servers that enhance Claude Code's cap
 - Data queries
 - Admin operations
 
-## Servers Not Included (Not Yet Available)
+## Optional Servers (Require API Keys)
+
+These servers enhance the `/new-task` command with web research capabilities. Add them to your local `.claude/.mcp.json` if you have API keys.
+
+### Exa Search (`@anthropic/mcp-server-exa`)
+**Purpose**: Web search for research and finding solutions
+
+**Setup**:
+```json
+"exa": {
+  "command": "npx",
+  "args": ["-y", "@anthropic/mcp-server-exa"],
+  "env": { "EXA_API_KEY": "your-key" }
+}
+```
+
+**Get API Key**: https://exa.ai
+
+### Firecrawl (`@anthropic/mcp-server-firecrawl`)
+**Purpose**: Web scraping and page content extraction
+
+**Setup**:
+```json
+"firecrawl": {
+  "command": "npx",
+  "args": ["-y", "@anthropic/mcp-server-firecrawl"],
+  "env": { "FIRECRAWL_API_KEY": "your-key" }
+}
+```
+
+**Get API Key**: https://firecrawl.dev
+
+---
+
+## Servers Not Yet Available
 
 The following servers were requested but don't have official MCP implementations yet:
 
 - **chrome-devtools** - No official MCP server found
-- **stripe** - No official MCP server found (as of Oct 2025)
+- **stripe** - No official MCP server found
 - **vercel** - No official MCP server found
 
 ## Using MCP Servers

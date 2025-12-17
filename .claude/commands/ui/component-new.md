@@ -1,6 +1,6 @@
 ---
 description: Create a new React component with TypeScript and modern best practices
-model: claude-sonnet-4-5
+model: claude-opus-4-5
 ---
 
 Generate a new React component following 2025 best practices.
@@ -63,9 +63,96 @@ export async function Component({ }: Props) {
 - `useCallback()` for callback functions
 
 ### 6. **Styling Approach** (choose based on project)
-- **Tailwind CSS** - Utility-first (recommended)
+- **Tailwind CSS + shadcn/ui** - Utility-first with pre-built components (recommended)
 - **CSS Modules** - Scoped styles
 - **Styled Components** - CSS-in-JS
+
+### 7. **shadcn/ui Integration**
+
+**Adding Components**
+```bash
+npx shadcn@latest add button card dialog input
+```
+
+**Using shadcn Components**
+```typescript
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+
+export function FeatureCard({ title, onAction }: Props) {
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>{title}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <Input placeholder="Enter value..." />
+        <Button onClick={onAction}>Submit</Button>
+      </CardContent>
+    </Card>
+  );
+}
+```
+
+**Extending with Variants (cva)**
+```typescript
+import { cva, type VariantProps } from "class-variance-authority";
+
+const badgeVariants = cva(
+  "inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold",
+  {
+    variants: {
+      variant: {
+        default: "bg-primary text-primary-foreground",
+        secondary: "bg-secondary text-secondary-foreground",
+        destructive: "bg-destructive text-destructive-foreground",
+        outline: "border border-input bg-background",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+    },
+  }
+);
+
+interface BadgeProps extends VariantProps<typeof badgeVariants> {
+  children: React.ReactNode;
+}
+
+export function Badge({ variant, children }: BadgeProps) {
+  return <span className={badgeVariants({ variant })}>{children}</span>;
+}
+```
+
+**Composing Complex Components**
+```typescript
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+
+export function ConfirmDialog({ onConfirm, children }: Props) {
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button variant="destructive">Delete</Button>
+      </DialogTrigger>
+      <DialogContent>
+        <DialogHeader>
+          <DialogTitle>Are you sure?</DialogTitle>
+        </DialogHeader>
+        {children}
+        <Button onClick={onConfirm}>Confirm</Button>
+      </DialogContent>
+    </Dialog>
+  );
+}
+```
 
 ## What to Generate
 
@@ -136,3 +223,6 @@ export async function Component({ }: Props) {
 - **Server Actions** for mutations
 
 Generate production-ready, accessible, and performant React components following Next.js 15 and React 19 patterns.
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

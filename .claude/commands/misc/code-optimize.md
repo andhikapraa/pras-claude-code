@@ -1,6 +1,6 @@
 ---
 description: Analyze and optimize code for performance, memory, and efficiency
-model: claude-sonnet-4-5
+model: claude-opus-4-5
 ---
 
 Optimize the following code for performance and efficiency.
@@ -146,3 +146,6 @@ import { useVirtual } from 'react-virtual'
 6. **Next Steps** - Further optimization opportunities
 
 Focus on practical, measurable optimizations that provide real user value. Don't sacrifice readability for micro-optimizations.
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

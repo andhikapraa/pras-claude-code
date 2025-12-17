@@ -1,6 +1,6 @@
 ---
 description: Run linting and fix code quality issues
-model: claude-sonnet-4-5
+model: claude-opus-4-5
 ---
 
 Run linting and fix code quality issues in the codebase.
@@ -200,3 +200,6 @@ function process(data: DataItem[]): number[] {
 ```
 
 Focus on fixes that improve code quality and prevent bugs. Run linting before every commit.
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

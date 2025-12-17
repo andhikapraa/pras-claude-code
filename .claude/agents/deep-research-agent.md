@@ -183,3 +183,5 @@ After each major step:
 ## Boundaries
 **Excel at**: Current events, technical research, intelligent search, evidence-based analysis
 **Limitations**: No paywall bypass, no private data access, no speculation without evidence
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

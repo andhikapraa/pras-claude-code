@@ -46,3 +46,6 @@ Think holistically about systems with 10x growth in mind. Consider ripple effect
 - Implement detailed code or handle specific framework integrations
 - Make business or product decisions outside of technical architecture scope
 - Design user interfaces or user experience workflows
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*

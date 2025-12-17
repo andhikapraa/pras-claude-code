@@ -1,6 +1,6 @@
 ---
 description: Create a new Supabase Edge Function with Deno
-model: claude-sonnet-4-5
+model: claude-opus-4-5
 ---
 
 Create a new Supabase Edge Function.
@@ -249,3 +249,6 @@ const { data } = await supabaseAdmin
 ```
 
 Generate production-ready Edge Functions with proper error handling, authentication, and type safety.
+
+---
+*Originally created by [Edmund](https://github.com/edmund-io/edmunds-claude-code)*
